@@ -1,0 +1,30 @@
+.center
+{
+    text-align: center;
+}
+
+.titledFont
+{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.topPageSize
+{
+    font-size: xx-large;
+}
+
+.topPageColor
+{
+    text-decoration-color: rgb(68, 68, 68);
+    text-underline-position: below;
+}
+
+.topSubColor
+{
+    text-decoration-color: rgb(151, 151, 151);
+}
+
+.bodySize
+{
+    font-size: large;
+}

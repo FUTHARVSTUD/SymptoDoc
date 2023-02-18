@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html lang="en">
+    [% import pyodbc %]
+    [% conn = pyodbc.connect(r'Driver={Microsoft Access Driver (*.mdb, *.accdb)};DBQ=C:\Users\samar.DESKTOP-V3T97OP\Documents\PyDboc_TrialDataBase1.accdb;') %]
+    [% cursor = conn.cursor() %]
+    [% cursor.execute('select * from Items') %]
+   
+    [% for row in cursor.fetchall(): %]
+       [% print (row) %]
+</html>

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="initial-scale=1, width=device-width">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>SymptoDoc - Chicken Pox</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <style>
+            .center
+            {
+                text-align: center;
+            }
+            .titledFont
+            {
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            .topPageSize
+            {
+                font-size: xx-large;
+            }
+            .topPageColor
+            {
+                text-decoration-color: rgb(68, 68, 68);
+            }
+            .topSubColor
+            {
+                text-decoration-color: rgb(151, 151, 151);
+            }
+            .bodySize
+            {
+                font-size: large;
+            }
+            .bottonpadding
+            {
+                padding-right: 20px;
+            }
+            .bottoncolor
+            {
+                text-decoration-color: white;
+                text-decoration-style: dotted;
+            }
+            .Object_Title
+            {
+                text-decoration: rgb(53, 53, 53);
+                text-shadow: 100px;
+                text-size-adjust: auto;
+                text-decoration: underline;
+                font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                padding-left: 20px;
+                padding-top: 20px;
+            }
+            .Title_Description
+            {
+                text-emphasis: none;
+                text-decoration-color: gray;
+                padding-left: 30px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: x-small;
+            }
+            .Title_Description_Sub
+            {
+                padding-inline-end: 190px;
+                padding-top: 20px;
+                text-align: justify;
+            }
+            .Title_Designer
+            {
+                text-align: center;
+                font-size:50px;
+                padding-top: 20px;
+                text-decoration: underline;
+                text-decoration-thickness: 3px;
+                text-decoration-style:unset ;
+            }
+            .In_Discription_Padding
+            {
+                padding-top: 10px;
+            }
+            .UnorderedList_Alignment
+            {
+                padding-top: 5px;
+                padding-left: 10px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: lighter;
+            }
+            .UnorderedList_Size
+            {
+                font-size: medium;
+            }
+            .Object_Title_Sub
+            {
+                text-decoration: rgb(53, 53, 53);
+                text-shadow: 100px;
+                text-size-adjust: auto;
+                text-decoration: underline;
+                font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                padding-left: 20px;
+                padding-top: 20px;
+                font-size: small;
+            }
+            .To_HTML
+            {
+                padding-left: 20px;
+                font-size: large;
+            }
+        </style>
+
+    </head>
+    <body>
+        <div class="alert alert-warning" role="alert">
+            CAUTION!! Site currently under Development
+          </div>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="http://127.0.0.1:5000/">SymptoDoc</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="http://127.0.0.1:5000/">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="http://127.0.0.1:5000/Searcher">DataBase</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Options
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Help</a>
+                    <a class="dropdown-item" href="#">Feedback</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="http://127.0.0.1:5000/Developers">Developers</a>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Feel Well</a>
+                </li>
+              </ul>
+              <form action="http://127.0.0.1:5000/login" class="form-inline my-2 my-lg-0 bottonpadding bottoncolor">
+                  <button class="btn btn-outline-success my-2 my-sm-0" type="login">Login</a></button>      
+              </form>
+              <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+              </form>
+            </div>
+          </nav>
+          <p>
+            <div class="Title_Designer shadow-lg p-3 mb-5 bg-white rounded">
+
+              Chickenpox
+
+          </div>
+          <div class="Object_Title">
+
+            <h3>
+
+                About Chickenpox
+            </h3>
+
+          </div>
+          <div class="Title_Description">
+
+            <h5 class="Title_Description_Sub">
+
+                Chickenpox is a mild and common childhood illness that most children catch at some point.<br>
+                It causes a rash of red, itchy spots that turn into fluid-filled blisters. They then crust over to form scabs, which eventually drop off.<br>
+
+            </h5>
+
+        </div>
+        <div class="Title_Description">
+
+          <h5 class="Title_Description_Sub">
+
+            Chickenpox is most common in children under the age of 10. In fact, chickenpox is so common in childhood that over 90% of adults are immune to the condition because they've had it before.<br>
+
+            Children usually catch chickenpox in winter and spring, particularly between March and May.<br><br>
+
+            <div class="In_Discription_Padding">
+
+                <h5>The most commonly recognised chickenpox symptom is a spotty, blistering red rash that usually appear:</h5>
+
+                <ul class="In_Discription_Padding">
+                  <li>behind the ears</li>
+                  <li>on the face</li>
+                  <li>over the scalp</li>
+                  <li>on the chest and belly</li>
+                  <li>on the arms and legs</li><br>
+                </ul>
+                  <h5>However, the spots can be anywhere on the body, even inside the ears and mouth, on the palms of the hands, soles of the feet and inside the nappy area.</h5>
+                  <h5>Although the rash starts as small, itchy red spots, these develop a blister on top and become intensely itchy after about 12-14 hours.
+
+                    After a day or two, the fluid in the blisters gets cloudy and they begin to dry out and crust over.
+                    
+                    After 1 to 2 weeks, the crusting skin will fall off naturally.</h5>
+                    <h5>New spots can keep appearing in waves for 3 to 5 days after the rash begins. Therefore, different clusters of spots may be at different stages of blistering or drying out. </h5>
+                <div class="In_Discription_Padding">
+
+                </div>
+
+                <div>
+
+          </p>
+        <br><br>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    </body>
+</html>
