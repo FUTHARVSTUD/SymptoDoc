@@ -93,7 +93,7 @@ def searcher():
 
 
 
-        HTML_LinkPage = open(r"C:\Users\Ullas\Desktop\SymptoDoc Code-20220326T063923Z-001\SymptoDoc Code\templates\HTML_ResultPage_Rudimentary.htm", 'w')
+        HTML_LinkPage = open(r"C:\Users\samr\Desktop\SymptoDoc Code-20220326T063923Z-001\SymptoDoc Code\templates\HTML_ResultPage_Rudimentary.htm", 'w')
         HTML_LinkPage.write(To_Use_HTML)
         return redirect(url_for("Results"))
     else:
