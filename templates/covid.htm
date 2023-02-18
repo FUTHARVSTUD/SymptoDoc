@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="initial-scale=1, width=device-width">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>SymptoDoc - Covid 19</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <style>
+            .center
+            {
+                text-align: center;
+            }
+            .titledFont
+            {
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            .topPageSize
+            {
+                font-size: xx-large;
+            }
+            .topPageColor
+            {
+                text-decoration-color: rgb(68, 68, 68);
+            }
+            .topSubColor
+            {
+                text-decoration-color: rgb(151, 151, 151);
+            }
+            .bodySize
+            {
+                font-size: large;
+            }
+            .bottonpadding
+            {
+                padding-right: 20px;
+            }
+            .bottoncolor
+            {
+                text-decoration-color: white;
+                text-decoration-style: dotted;
+            }
+            .Object_Title
+            {
+                text-decoration: rgb(53, 53, 53);
+                text-shadow: 100px;
+                text-size-adjust: auto;
+                text-decoration: underline;
+                font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                padding-left: 20px;
+                padding-top: 20px;
+            }
+            .Title_Description
+            {
+                text-emphasis: none;
+                text-decoration-color: gray;
+                padding-left: 30px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: x-small;
+            }
+            .Title_Description_Sub
+            {
+                padding-inline-end: 190px;
+                padding-top: 20px;
+                text-align: justify;
+            }
+            .Title_Designer
+            {
+                text-align: center;
+                font-size:50px;
+                padding-top: 20px;
+                text-decoration: underline;
+                text-decoration-thickness: 3px;
+                text-decoration-style:unset ;
+            }
+            .In_Discription_Padding
+            {
+                padding-top: 10px;
+            }
+            .UnorderedList_Alignment
+            {
+                padding-top: 5px;
+                padding-left: 10px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: lighter;
+            }
+            .UnorderedList_Size
+            {
+                font-size: medium;
+            }
+            .Object_Title_Sub
+            {
+                text-decoration: rgb(53, 53, 53);
+                text-shadow: 100px;
+                text-size-adjust: auto;
+                text-decoration: underline;
+                font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                padding-left: 20px;
+                padding-top: 20px;
+                font-size: small;
+            }
+            .To_HTML
+            {
+                padding-left: 20px;
+                font-size: large;
+            }
+        </style>
+
+    </head>
+    <body>
+        <div class="alert alert-warning" role="alert">
+            CAUTION!! Site currently under Development
+          </div>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="http://127.0.0.1:5000/">SymptoDoc</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="http://127.0.0.1:5000/">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="http://127.0.0.1:5000/Searcher">DataBase</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Options
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Help</a>
+                    <a class="dropdown-item" href="#">Feedback</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="http://127.0.0.1:5000/Developers">Developers</a>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Feel Well</a>
+                </li>
+              </ul>
+              <form action="http://127.0.0.1:5000/login" class="form-inline my-2 my-lg-0 bottonpadding bottoncolor">
+                  <button class="btn btn-outline-success my-2 my-sm-0" type="login">Login</a></button>      
+              </form>
+              <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+              </form>
+            </div>
+          </nav>
+          <p>
+            <div class="Title_Designer shadow-lg p-3 mb-5 bg-white rounded">
+
+              Covid-19
+
+          </div>
+          <div class="Object_Title">
+
+            <h3>
+
+                About Covid-19 
+
+            </h3>
+
+          </div>
+          <div class="Title_Description">
+
+            <h5 class="Title_Description_Sub">
+
+              Coronavirus (COVID-19) is the illness caused by a strain of coronavirus first identified in Wuhan city, China.
+               It can cause a new continuous cough, fever or loss of, or change in, sense of smell or taste (anosmia).<br>
+
+            </h5>
+
+        </div>
+        <div class="Title_Description">
+
+          <h5 class="Title_Description_Sub">
+
+            Generally, coronavirus can cause more severe symptoms in people with weakened immune systems, older people and those with long term conditions like diabetes, cancer and chronic lung disease.<br>
+
+            <div class="In_Discription_Padding">Some groups of people are considered to be at extremely high risk of severe illness with coronavirus. These people should strictly follow protective measures and hygiene measures. <br></div>
+
+            <div class="In_Discription_Padding">
+
+                <h5>The initial symptoms of Covid-19 include:</h5>
+
+                <ul class="In_Discription_Padding">
+                  <li>continuous cough</li>
+                  <li>fever/high temperature (37.8C or greater)</li>
+                  <li>loss of, or change in, sense of smell or taste (anosmia)</li>
+                  <li>sore throat and difficulty in breathing</li>
+    
+
+                </ul>
+                <div class="In_Discription_Padding">
+
+                </div>
+
+                <div>
+
+          </p>
+        <br><br>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    </body>
+</html>
+</html>
